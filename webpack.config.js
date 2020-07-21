@@ -11,7 +11,7 @@ module.exports = {
     open: true,
     contentBase: 'src',
     port: 3000,
-    hot: true
+    // hot: true
   },
   plugins: [
     new htmlWebpackPlugin({
@@ -31,7 +31,7 @@ module.exports = {
           'postcss-loader'
         ]
       }, //  配置处理 .css 文件的第三方loader 规则
-      { test: /\.less$/, use: ['style-loader', 'css-loader', 'less-loader'] }, //配置处理 .less 文件的第三方 loader 规则
+      { test: /\.less$/, use: ['style-loader', 'css-loader', 'less-loader', 'postcss-loader'] }, //配置处理 .less 文件的第三方 loader 规则
       {
         test: /\.(jpg|png|gif|bmp|svg)$/,
         use: 'url-loader?limit=1000&name=[hash:8]-[name].[ext]'
