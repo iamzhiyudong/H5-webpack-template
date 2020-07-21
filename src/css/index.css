@@ -1,0 +1,15 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: red;
+  width: 700px;
+}
+
+.wrap {
+  width: 750px;
+  background-color: deepskyblue;
+  height: 300px;
+}
